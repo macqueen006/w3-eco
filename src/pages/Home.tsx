@@ -285,6 +285,66 @@ function Home() {
                 </div>
             </section>
 
+            <section className="py-28 bg-linear-to-t from-surface to-background">
+                <div className="w-full px-6">
+                    <div className="grid gap-16 md:grid-cols-2 h-auto relative">
+                        <div className="py-[6px] flex flex-col gap-16">
+                            <div className="flex flex-col items-start justify-start gap-6">
+                                <div className="font-badges text-xs uppercase">[our purpose]</div>
+                                <div className="text-[51px] leading-[58.65px] -tracking-[0.51]">
+                                    Delivering Low-Emissions Infrastructure.
+                                </div>
+                                <Link to="/about" className="flex w-full gap-2 justify-start items-center">
+                                    <div className="inline-flex items-center justify-center rounded-full bg-primary p-3 group-hover:bg-primary/90 transition-colors">
+                                        <ArrowRight className="h-6 w-6"/>
+                                    </div>
+                                    <div className="font-badges uppercase text-sm">our processes</div>
+                                </Link>
+                            </div>
+                            <div>
+                                <div className="border-t border-slate-300">
+                                    <div className="flex gap-6 border-b border-dotted border-slate-500 items-center justify-start py-6">
+                                        <div className="size-[60px] shrink-0 flex justify-center items-center bg-foreground text-surface rounded-sm">
+                                            <img src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc03e584218f3051169c3_icon-my-location-light.svg"
+                                                 alt="" className="size-9"/>
+                                        </div>
+                                        <div className="max-w-[425px]">
+                                            Deploying solar solutions to cut emissions, reduce grid dependence, and power freight.
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-6 border-b border-dotted border-slate-500 items-center justify-start py-6">
+                                        <div className="size-[60px] shrink-0 flex justify-center items-center bg-foreground text-surface rounded-sm">
+                                            <img src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc03e438e97278eb4cba0_icon-forest-light.svg"
+                                                 alt="" className="size-9"/>
+                                        </div>
+                                        <div className="max-w-[425px]">
+                                            Advising on-site and off-site wind integration to help logistics operations transition to Zero Emissions.
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-6 border-b border-dotted border-slate-500 items-center justify-start py-6">
+                                        <div className="size-[60px] shrink-0 flex justify-center items-center bg-foreground text-surface rounded-sm">
+                                            <img src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc03e90f8bdd05370ec4b_icon-map-pinpoint-light.svg"
+                                                 alt="" className="size-9"/>
+                                        </div>
+                                        <div className="max-w-[425px]">
+                                            Harnessing sensor data and analytics to optimize flow and predict disruptions across multi-modal networks.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="max-h-[623px] min-h-full overflow-hidden relative rounded-sm">
+                            <img
+                                className="rounded-sm h-full w-full object-cover"
+                                src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc478823d5a3deb3b4427_portrait-02.webp"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
 
         </div>
     );
