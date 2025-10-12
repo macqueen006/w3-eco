@@ -16,6 +16,7 @@ import {cn} from "../lib/utils.ts";
 import {Button} from "../components/ui/button.tsx";
 import {ArrowRight} from "lucide-react";
 import Marquee from "react-fast-marquee";
+import {ICON_CARDS} from "../constants/cards.ts";
 
 function Home() {
     return (
@@ -295,7 +296,8 @@ function Home() {
                                     Delivering Low-Emissions Infrastructure.
                                 </div>
                                 <Link to="/about" className="flex w-full gap-2 justify-start items-center">
-                                    <div className="inline-flex items-center justify-center rounded-full bg-primary p-3 group-hover:bg-primary/90 transition-colors">
+                                    <div
+                                        className="inline-flex items-center justify-center rounded-full bg-primary p-3 group-hover:bg-primary/90 transition-colors">
                                         <ArrowRight className="h-6 w-6"/>
                                     </div>
                                     <div className="font-badges uppercase text-sm">our processes</div>
@@ -303,31 +305,43 @@ function Home() {
                             </div>
                             <div>
                                 <div className="border-t border-slate-300">
-                                    <div className="flex gap-6 border-b border-dotted border-slate-500 items-center justify-start py-6">
-                                        <div className="size-[60px] shrink-0 flex justify-center items-center bg-foreground text-surface rounded-sm">
-                                            <img src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc03e584218f3051169c3_icon-my-location-light.svg"
-                                                 alt="" className="size-9"/>
+                                    <div
+                                        className="flex gap-6 border-b border-dotted border-slate-500 items-center justify-start py-6">
+                                        <div
+                                            className="size-[60px] shrink-0 flex justify-center items-center bg-foreground text-surface rounded-sm">
+                                            <img
+                                                src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc03e584218f3051169c3_icon-my-location-light.svg"
+                                                alt="" className="size-9"/>
                                         </div>
                                         <div className="max-w-[425px]">
-                                            Deploying solar solutions to cut emissions, reduce grid dependence, and power freight.
+                                            Deploying solar solutions to cut emissions, reduce grid dependence, and
+                                            power freight.
                                         </div>
                                     </div>
-                                    <div className="flex gap-6 border-b border-dotted border-slate-500 items-center justify-start py-6">
-                                        <div className="size-[60px] shrink-0 flex justify-center items-center bg-foreground text-surface rounded-sm">
-                                            <img src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc03e438e97278eb4cba0_icon-forest-light.svg"
-                                                 alt="" className="size-9"/>
+                                    <div
+                                        className="flex gap-6 border-b border-dotted border-slate-500 items-center justify-start py-6">
+                                        <div
+                                            className="size-[60px] shrink-0 flex justify-center items-center bg-foreground text-surface rounded-sm">
+                                            <img
+                                                src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc03e438e97278eb4cba0_icon-forest-light.svg"
+                                                alt="" className="size-9"/>
                                         </div>
                                         <div className="max-w-[425px]">
-                                            Advising on-site and off-site wind integration to help logistics operations transition to Zero Emissions.
+                                            Advising on-site and off-site wind integration to help logistics operations
+                                            transition to Zero Emissions.
                                         </div>
                                     </div>
-                                    <div className="flex gap-6 border-b border-dotted border-slate-500 items-center justify-start py-6">
-                                        <div className="size-[60px] shrink-0 flex justify-center items-center bg-foreground text-surface rounded-sm">
-                                            <img src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc03e90f8bdd05370ec4b_icon-map-pinpoint-light.svg"
-                                                 alt="" className="size-9"/>
+                                    <div
+                                        className="flex gap-6 border-b border-dotted border-slate-500 items-center justify-start py-6">
+                                        <div
+                                            className="size-[60px] shrink-0 flex justify-center items-center bg-foreground text-surface rounded-sm">
+                                            <img
+                                                src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc03e90f8bdd05370ec4b_icon-map-pinpoint-light.svg"
+                                                alt="" className="size-9"/>
                                         </div>
                                         <div className="max-w-[425px]">
-                                            Harnessing sensor data and analytics to optimize flow and predict disruptions across multi-modal networks.
+                                            Harnessing sensor data and analytics to optimize flow and predict
+                                            disruptions across multi-modal networks.
                                         </div>
                                     </div>
                                 </div>
@@ -345,6 +359,36 @@ function Home() {
                 </div>
             </section>
 
+            <section className="py-28 bg-linear-to-b from-surface to-background">
+                <div className="w-full px-6">
+                    <div className="flex flex-col gap-20">
+                        <div
+                            className="max-w-[928px] gap-6 text-center flex flex-col justify-start items-center mx-auto">
+                            <div className="text-[40px] leading-[48px] tracking-[-0.4px] text-foreground">Partner with
+                                Lifecycle to solve your most complex operational
+                                challenges.
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 gap-6 auto-cols-fr">
+                            {ICON_CARDS.map((card) => (
+                                <div
+                                    key={card.id}
+                                    className="flex flex-col justify-start items-start gap-24 rounded-sm bg-background shadow px-[18px] pt-[18px] pb-6"
+                                >
+                                    <div
+                                        className="flex justify-center items-center w-auto h-auto p-[18px] rounded-sm bg-primary flex-none">
+                                        <img src={card.icon} alt=""/>
+                                    </div>
+                                    <div className="flex flex-col gap-3">
+                                        <div className="text-lg font-semibold">{card.title}</div>
+                                        <div className="text-base">{card.description}</div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </div>
     );
