@@ -1,0 +1,194 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+    /* ===== NEUTRAL COLORS ===== */
+    --color-background: oklch(97.5% 0.008 95);
+    --color-surface: oklch(93.5% 0.008 95);
+    --color-foreground: oklch(26% 0.012 95);
+    --color-border: oklch(90% 0.002 264);
+    --color-divider: oklch(94% 0.001 264);
+    --color-overlay: oklch(12% 0.028 261.692);
+
+    /* ===== BRAND COLORS ===== */
+    --color-secondary: oklch(19% 0.045 170);
+    --color-primary: oklch(94% 0.22 110);
+
+    /* Warning */
+    --color-warning-50: oklch(98% 0.02 85);
+    --color-warning-500: oklch(80% 0.16 85);
+    --color-warning-600: oklch(70% 0.14 85);
+    --color-warning-700: oklch(60% 0.12 85);
+
+    /* Error */
+    --color-error-50: oklch(97% 0.02 25);
+    --color-error-500: oklch(65% 0.22 25);
+    --color-error-600: oklch(55% 0.20 25);
+    --color-error-700: oklch(45% 0.18 25);
+
+    /* Info */
+    --color-info-50: oklch(97% 0.02 220);
+    --color-info-500: oklch(68% 0.16 220);
+    --color-info-600: oklch(58% 0.14 220);
+    --color-info-700: oklch(48% 0.12 220);
+
+    /* ===== TYPOGRAPHY ===== */
+    --font-body: "Funnel Sans", Arial, sans-serif;
+    --font-headings: "Funnel Sans", Arial, sans-serif;
+    --font-badges: "Geist Mono", "Trebuchet MS", sans-serif;
+
+    /* Font Sizes with Line Heights */
+    --text-xs: 0.75rem;
+    --text-xs--line-height: 1.33;
+    --text-sm: 0.875rem;
+    --text-sm--line-height: 1.43;
+    --text-base: 1rem;
+    --text-base--line-height: 1.5;
+    --text-lg: 1.125rem;
+    --text-lg--line-height: 1.56;
+    --text-xl: 1.25rem;
+    --text-xl--line-height: 1.4;
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: 1.33;
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: 1.2;
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: 1.11;
+
+    /* ... continue this pattern for all text sizes */
+
+    /* ===== SPACING ===== */
+    --spacing-xs: 6px;
+    --spacing-sm: 12px;
+    --spacing-md: 18px;
+
+    /* ===== BREAKPOINTS ===== */
+    --breakpoint-md: 61.9375rem;
+    --breakpoint-sm: 47.9375rem;
+    --breakpoint-xs: 29.9375rem;
+}
+
+
+/* ===== CUSTOM BASE STYLES (Complementing Tailwind v4's reset) ===== */
+@layer base {
+    body {
+        background-color: var(--color-background);
+        font-family: var(--font-body), sans-serif;
+        color: var(--color-foreground);
+        font-size: var(--text-base);
+        line-height: var(--leading-loose);
+        font-weight: 400;
+    }
+
+    /* Custom typography that extends Tailwind's base styles */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-headings), sans-serif;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    h1 {
+        font-size: 64px;
+        line-height: 67px;
+        letter-spacing: -1.28px;
+    }
+
+    h2 {
+        font-size: var(--text-5xl);
+        line-height: var(--leading-snug);
+        letter-spacing: var(--tracking-tight);
+    }
+
+    h3 {
+        font-size: var(--text-4xl);
+        line-height: var(--leading-normal);
+        letter-spacing: var(--tracking-tight);
+    }
+
+    h4 {
+        font-size: var(--text-3xl);
+        line-height: var(--leading-normal);
+    }
+
+    h5 {
+        font-size: var(--text-2xl);
+        line-height: var(--leading-relaxed);
+        margin-top: 18px;
+    }
+
+    /* Custom text colors */
+    p {
+        color: var(--color-foreground);
+        margin-bottom: 0;
+    }
+
+    a {
+        color: var(--color-foreground);
+        text-decoration: none;
+    }
+
+    /* Custom list styles */
+    ul {
+        padding-left: var(--leading-loose);
+        grid-column-gap: 12px;
+        grid-row-gap: 12px;
+        color: var(--color-foreground);
+        flex-flow: column;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        display: flex;
+    }
+
+    /* Form elements that need custom styling */
+    label {
+        font-size: var(--text-sm);
+        line-height: var(--leading-loose);
+        margin-bottom: 6px;
+        font-weight: 400;
+        display: block;
+    }
+
+    strong {
+        font-weight: 500;
+    }
+
+    /* Images */
+    img {
+        object-fit: cover;
+        max-width: 100%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    /* Blockquote */
+    blockquote {
+        border-left: 5px solid #e2e2e2;
+        margin-bottom: 10px;
+        padding: 10px 20px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    figure {
+        margin-bottom: 10px;
+    }
+
+    figcaption {
+        font-size: var(--text-base);
+        line-height: var(--leading-loose);
+        text-align: center;
+        margin-top: 5px;
+    }
+}
+
+@layer components {
+    .hero-transform {
+        will-change: transform;
+        transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+        transform-style: preserve-3d;
+    }
+}
+
