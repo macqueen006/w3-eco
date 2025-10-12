@@ -15,10 +15,11 @@ import {Link} from "react-router";
 import {cn} from "../lib/utils.ts";
 import {Button} from "../components/ui/button.tsx";
 import {ArrowRight} from "lucide-react";
+import Marquee from "react-fast-marquee";
 
 function Home() {
     return (
-        <div className="z-100 min-h-screen p-[6px] flex relative">
+        <div className="z-100 min-h-screen p-[6px] flex flex-col relative">
             <section
                 className="bg-secondary rounded-sm text-surface flex flex-col relative overflow-hidden justify-between flex-1">
                 <NavWrapper className="bg-transparent text-white">
@@ -91,9 +92,9 @@ function Home() {
                 {/*End video */}
                 {/*Hero text content*/}
                 <div className="px-6 py-12 relative w-full h-full z-10">
-                    <div className="flex gap-6 justify-between items-end">
+                    <div className="flex flex-col h-full w-full md:flex-row gap-6 justify-between items-end">
                         <div
-                            className="flex flex-col p-6 backdrop-blur-[18px] opacity-[1] bg-surface/50 gap-9 rounded-sm max-w-[571px]">
+                            className="flex flex-col p-6 backdrop-blur-[18px] opacity-[1] bg-surface/50 gap-9 rounded-sm max-w-[571px] mx-auto md:mx-0">
                             {/* Content */}
                             <div className="flex flex-col justify-start gap-6">
                                 <span className="text-surface">[Lifecycle solutions]</span>
@@ -113,7 +114,7 @@ function Home() {
                         </div>
 
                         <Link to="/about"
-                              className="p-3 bg-surface max-w-[452px] text-foreground w-full flex items-center rounded-sm justify-between">
+                              className="p-3 bg-surface max-w-[452px] mx-auto md:mx-0 text-foreground w-full flex items-center rounded-sm justify-between group hover:bg-surface/80 transition-colors">
                             <div className="flex justify-start items-center gap-3">
                                 <div
                                     className="*:data-[slot=avatar]:ring-background flex -space-x-2 *:data-[slot=avatar]:ring-2 *:data-[slot=avatar]:grayscale">
@@ -122,25 +123,59 @@ function Home() {
                                         <AvatarFallback>CN</AvatarFallback>
                                     </Avatar>
                                     <Avatar className="h-[71px] w-[54px]">
-                                        <AvatarImage
-                                            src="https://github.com/maxleiter.png"
-                                            alt="@maxleiter"
-                                        />
+                                        <AvatarImage src="https://github.com/maxleiter.png" alt="@maxleiter"/>
                                         <AvatarFallback>LR</AvatarFallback>
                                     </Avatar>
                                 </div>
                                 <p className="uppercase text-foreground text-sm font-badges">speak with our team</p>
                             </div>
-                            <Button asChild variant="primary" className="rounded-full">
-                                <Link to="/about">
-                                    <ArrowRight className="h-6 w-6" />
-                                </Link>
-                            </Button>
+                            {/* Just a styled div, not a clickable button */}
+                            <div
+                                className="inline-flex items-center justify-center rounded-full bg-primary p-3 group-hover:bg-primary/90 transition-colors">
+                                <ArrowRight className="h-6 w-6"/>
+                            </div>
                         </Link>
-
                     </div>
                 </div>
             </section>
+            <section className="block py-16 relative">
+                <div className="w-full px-6 mx-auto max-w-[1366px]">
+                    <div className="text-center flex flex-col items-center justify-start pb-16 gap-16">
+                        <div className="badge-text">Helping 100+ leading companies get better results</div>
+                        <div className="marquee">
+                            <Marquee
+                                speed={50}
+                                gradient={true}
+                                gradientColor="white"
+                                gradientWidth={100}
+                            >
+                                <div className="flex gap-16 items-center h-[48px] last:pr-16">
+                                    <img
+                                        src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/68353460e39a8797e6f64f4e_marquee-logo-01.svg"
+                                        alt="" className="marquee-logo"/>
+                                    <img
+                                        src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/683534603fd5947ee8bc5fb1_marquee-logo-02.svg"
+                                        alt="" className="marquee-logo"/>
+                                    <img
+                                        src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/68353460930016f8c1865842_marquee-logo-03.svg"
+                                        alt="" className="marquee-logo"/>
+                                    <img
+                                        src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/68353460ec4b1d80f6269124_marquee-logo-04.svg"
+                                        alt="" className="marquee-logo"/>
+                                    <img
+                                        src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/68353460ec4b1d80f6269120_marquee-logo-05.svg"
+                                        alt="" className="marquee-logo"/>
+                                    <img
+                                        src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/683534603fb873b0cc291864_marquee-logo-06.svg"
+                                        alt="" className="marquee-logo"/>
+                                </div>
+                            </Marquee>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
         </div>
     );
 }
