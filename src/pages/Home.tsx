@@ -141,7 +141,7 @@ function Home() {
             <section className="block py-16 relative">
                 <div className="w-full px-6 mx-auto max-w-[1366px]">
                     <div className="text-center flex flex-col items-center justify-start pb-16 gap-16">
-                        <div className="badge-text">Helping 100+ leading companies get better results</div>
+                        <div className="font-badges">Helping 100+ leading companies get better results</div>
                         <div className="marquee">
                             <Marquee
                                 speed={50}
@@ -170,6 +170,116 @@ function Home() {
                                         alt="" className="marquee-logo"/>
                                 </div>
                             </Marquee>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="py-28">
+                <div className="w-full px-6">
+                    <div className="grid gap-16 md:grid-cols-2 place-items-center h-full">
+                        <div className="py-[6px] justify-between flex flex-col gap-16">
+                            <div className="flex flex-col gap-6 items-start justify-start">
+                                <div className="font-badges">[Applied efficiency]</div>
+                                <div className="text-[51px] leading-[58.65px] -tracking-[0.51]">Optimize Operations with
+                                    Real-time Data.
+                                </div>
+                                <Link to="/about"
+                                      className="flex w-full gap-2 justify-start items-center">
+                                    <div
+                                        className="inline-flex items-center justify-center rounded-full bg-primary p-3 group-hover:bg-primary/90 transition-colors">
+                                        <ArrowRight className="h-6 w-6"/>
+                                    </div>
+                                    <div className="font-badges uppercase text-sm">more information</div>
+                                </Link>
+                            </div>
+                            <div
+                                className="flex flex-col gap-6 items-start justify-start max-w-[571px] pl-9 border-l border-dotted border-foreground">
+                                <img
+                                    src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/68353460930016f8c1865842_marquee-logo-03.svg"
+                                    alt=""/>
+                                <div className="leading-[22.4px]">“This team understood the nuance of our industry and
+                                    helped us map a way forward
+                                    that was both ambitious and achievable. Their advice wasn’t theoretical—it was
+                                    grounded, actionable, and already making a real difference.”
+                                </div>
+                                <div className="flex items-end justify-start gap-3">
+                                    <Avatar className="rounded-full w-[54px] h-[71px]">
+                                        <AvatarImage
+                                            src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc478b5154809023ec147_customer-02.webp"
+                                            alt="@evilrabbit"
+                                        />
+                                        <AvatarFallback>ER</AvatarFallback>
+                                    </Avatar>
+                                    <div>
+                                        <div className="font-badges text-xs uppercase">jaya kowalski</div>
+                                        <div className="font-badges text-xs uppercase">head of product</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            className="overflow-hidden relative flex py-9 h-auto items-center justify-center rounded-sm justify-self-stretch">
+                            <div className="absolute w-full h-full overflow-hidden">
+                                <img
+                                    className="absolute w-full h-full object-cover"
+                                    src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc478235512b0e740acbe_landscape-18.webp"
+                                    alt=""
+                                    sizes="(max-width: 1440px) 100vw, 1440px"
+                                    style={{
+                                        willChange: "transform",
+                                        transform: "translate3d(0px, 2.4998%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg)",
+                                        transformStyle: "preserve-3d"
+                                    }}
+                                />
+                                <div className="absolute w-full h-full backdrop-blur-[18px] bg-surface/10"></div>
+                            </div>
+                            <div className="flex justify-start items-center flex-col relative gap-6 z-10">
+                                <div className="flex gap-12">
+                                    <div
+                                        className="flex gap-3 relative rounded-sm overflow-hidden text-center flex-col max-w-[156px] px-[6px] pt-[6px] pb-3">
+                                        <div className="relative rounded-sm overflow-hidden flex flex-col gap-3">
+                                            <img
+                                                src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc4783249441e9db3f46a_landscape-02.webp"
+                                                alt="" sizes="(max-width: 1440px) 100vw, 1440px"
+                                                className="z-20 rounded-sm"/>
+                                            <div className="text-xs uppercase font-badges text-white z-10">solar<br/>potential
+                                            </div>
+                                        </div>
+                                        <div
+                                            className="absolute top-0 left-0 w-full h-full backdrop-blur-[18px] bg-surface/30"></div>
+                                    </div>
+
+                                    <div
+                                        className="flex gap-3 relative rounded-sm overflow-hidden text-center flex-col max-w-[156px] px-[6px] pt-[6px] pb-3">
+                                        <div className="relative rounded-sm overflow-hidden flex flex-col gap-3">
+                                            <img
+                                                src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc479b5154809023ec17d_landscape-12.webp"
+                                                alt="" sizes="(max-width: 1440px) 100vw, 1440px"
+                                                className="z-20 rounded-sm"/>
+                                            <div className="text-xs uppercase font-badges text-white z-10">logistic<br/>frameworks
+                                            </div>
+                                        </div>
+                                        <div
+                                            className="absolute top-0 left-0 w-full h-full backdrop-blur-[18px] bg-surface/30"></div>
+                                    </div>
+                                </div>
+
+                                <div className="flex flex-col items-center mx-auto w-full justify-start self-stretch">
+                                    <div
+                                        className="self-stretch h-6 mx-[25px] border-r border-b border-l border-dotted border-border rounded-b-sm"/>
+                                    <div className="w-px h-6 border-l border-dotted border-border"/>
+                                </div>
+                                <div
+                                    className="flex flex-col gap-3 rounded-sm bg-primary text-center max-w-[156px] p-[6px_6px_12px]">
+                                    <div
+                                        className="inline-flex justify-center items-center w-36 h-36 rounded-sm bg-[#3b3b3333]">
+                                        <img
+                                            src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc03ed96832163a6db842_icon-radar.svg"
+                                            alt=""/>
+                                    </div>
+                                    <div className="font-badges text-xs uppercase">accelerated fulfillment</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
