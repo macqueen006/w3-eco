@@ -1,18 +1,9 @@
-import {MobileNav, NavInnerLeft, NavInnerRight, NavWrapper} from "../../layouts/navbar";
-import {
-    NavigationMenu,
-    NavigationMenuItem,
-    NavigationMenuLink,
-    NavigationMenuList, navigationMenuTriggerStyle
-} from "../../components/ui/navigation-menu.tsx";
 import {
     Avatar,
     AvatarFallback,
     AvatarImage,
 } from "../../components/ui/avatar.tsx";
-import {NAV_ITEMS} from "../../constants/navigation.ts";
 import {Link} from "react-router";
-import {cn} from "../../lib/utils.ts";
 import {Button} from "../../components/ui/button.tsx";
 import {ArrowRight} from "lucide-react";
 import Marquee from "react-fast-marquee";
@@ -26,54 +17,7 @@ function Home() {
     return (
         <div className="z-100 min-h-screen w-full p-[6px] flex flex-col relative">
             <section
-                className="bg-secondary rounded-sm text-surface flex flex-col relative overflow-hidden justify-between flex-1">
-                <NavWrapper className="bg-transparent text-white">
-                    <NavInnerLeft
-                        logo={
-                            <a href="/public" aria-current="page"
-                               className="relative text-[#333] decoration-0 bg-transparent shrink-0"
-                               aria-label="home">
-                                <img
-                                    src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/68465530cad72707fd6d1674_logo-lifecycle-light.svg"
-                                    alt="logo" className="max-h-[36px] shrink-0"/>
-                            </a>
-                        }
-                        navigation={
-                            <NavigationMenu viewport={false}>
-                                <NavigationMenuList className="sm:flex flex-row gap-6 my-0 hidden">
-                                    {NAV_ITEMS.map((item) => (
-                                        <NavigationMenuItem key={item.label}>
-                                            <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                                                <Link to={item.to}
-                                                      className={cn("!text-base font-normal !p-0 hover:text-foreground/75 bg-transparent text-white",
-                                                          location.pathname === item.to && "text-primary"
-                                                      )}>{item.label}</Link>
-                                            </NavigationMenuLink>
-                                        </NavigationMenuItem>
-                                    ))}
-                                </NavigationMenuList>
-                            </NavigationMenu>
-                        }
-                    />
-
-                    <NavInnerRight
-                        button={
-                            <div className="w-full hidden md:block">
-                                <a href="/contact"
-                                   target="_blank"
-                                   className="h-[42px] px-[18px] flex justify-center items-center rounded-sm font-normal relative bg-primary text-dark text-sm uppercase">
-                                    <div className="button-text-wrapper">
-                                        <div className="button-text">W3 Licences</div>
-                                    </div>
-                                </a>
-                            </div>
-                        }
-                        mobileMenu={
-                            <MobileNav/>
-                        }
-                    />
-                </NavWrapper>
-
+                className="bg-secondary rounded-sm  min-h-screen text-surface flex flex-col relative overflow-hidden justify-between flex-1">
                 <div
                     className="video absolute top-0 left-0 h-screen w-screen pointer-none z-[1] opacity-[1] hero-transform">
                     <video
@@ -98,7 +42,6 @@ function Home() {
                     <div className="flex flex-col h-full w-full md:flex-row gap-6 justify-between items-end">
                         <div
                             className="flex flex-col p-6 backdrop-blur-[18px] opacity-[1] bg-surface/50 gap-9 rounded-sm max-w-[571px] mx-auto md:mx-0">
-                             Content
                             <div className="flex flex-col justify-start gap-6">
                                 <span className="text-surface">[Lifecycle solutions]</span>
                                 <h3 className="text-surface">
@@ -143,7 +86,8 @@ function Home() {
             </section>
 
             <Section>
-                <div className="text-center flex flex-col items-center justify-start pb-16 gap-16 w-full overflow-hidden">
+                <div
+                    className="text-center flex flex-col items-center justify-start pb-16 gap-16 w-full overflow-hidden">
                     <div className="font-badges">Helping 100+ leading companies get better results</div>
                     <div className="marquee">
                         <Marquee
@@ -366,7 +310,9 @@ function Home() {
                     <div className="flex flex-col gap-20">
                         <div
                             className="max-w-[928px] gap-6 text-center flex flex-col justify-start items-center mx-auto">
-                            <div className="text-3xl md:text-[40px] leading-[48px] tracking-[-0.4px] text-foreground">Partner with
+                            <div
+                                className="text-3xl md:text-[40px] leading-[48px] tracking-[-0.4px] text-foreground">Partner
+                                with
                                 W3-Tech to solve your most complex operational
                                 challenges.
                             </div>
@@ -403,7 +349,7 @@ function Home() {
             />
 
             <Section>
-                <ResourcesSection />
+                <ResourcesSection/>
             </Section>
         </div>
     );

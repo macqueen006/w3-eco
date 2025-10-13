@@ -18,11 +18,11 @@ function Navbar() {
     const location = useLocation();
 
     return (
-        <NavWrapper className="hidden">
+        <NavWrapper>
             <NavInnerLeft
                 logo={
                     <a href="/public" aria-current="page"
-                       className="relative text-[#333] decoration-0 bg-background shrink-0"
+                       className="relative text-[#333] decoration-0 shrink-0"
                        aria-label="home">
                         <img
                             src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/684655302e77639311d54413_logo-lifecycle.svg"
