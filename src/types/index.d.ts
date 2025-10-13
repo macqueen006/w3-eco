@@ -39,4 +39,21 @@ declare global {
         link: string;
     }
 
+    interface CardData {
+        id: string;
+        image: string;
+        title: string;
+        description: string;
+        link: string;
+        linkText?: string;
+    }
+
+    interface ResourcesSectionProps {
+        badge?: string;
+        title?: string;
+        description?: string;
+        cards?: CardData[];
+        columns?: 3 | 4;
+    }
+
 }

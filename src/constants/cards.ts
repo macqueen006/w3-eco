@@ -24,3 +24,30 @@ export const ICON_CARDS = [
         description: "Ensuring uptime with smart monitoring, remote diagnostics, and connectivity strategies."
     }
 ];
+
+export const CARDS_DATA: CardData[] = [
+    {
+        id: "card-1",
+        image: "https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc4783249441e9db3f46a_landscape-02.webp",
+        title: "Smart Logistics",
+        description: "Optimizing freight systems with data-driven strategies.",
+        link: "/our-services",
+        linkText: "learn more"
+    },
+    {
+        id: "card-2",
+        image: "https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc4788a37af277877951f_landscape-10.webp",
+        title: "Regenerative Agriculture",
+        description: "Helping scale climate-smart practices that restore land health.",
+        link: "/our-process",
+        linkText: "learn more"
+    },
+    {
+        id: "card-3",
+        image: "https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc479b5154809023ec17d_landscape-12.webp",
+        title: "Enviro-Intelligence",
+        description: "Turning raw environmental data into actionable insight.",
+        link: "/industries",
+        linkText: "learn more"
+    }
+];

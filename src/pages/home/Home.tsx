@@ -19,6 +19,8 @@ import Marquee from "react-fast-marquee";
 import {ICON_CARDS} from "../../constants/cards.ts";
 import {ServicesTabsSection} from "./ServicesTabsSection.tsx";
 import ImageBackgroundSection from "./ImageBackgroundSection.tsx";
+import {Section} from "../../components/Section.tsx";
+import {ResourcesSection} from "./ResourcesSection.tsx";
 
 function Home() {
     return (
@@ -141,42 +143,40 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section className="block py-16 relative">
-                <div className="w-full px-6 mx-auto max-w-[1366px]">
-                    <div className="text-center flex flex-col items-center justify-start pb-16 gap-16">
-                        <div className="font-badges">Helping 100+ leading companies get better results</div>
-                        <div className="marquee">
-                            <Marquee
-                                speed={50}
-                                gradient={true}
-                                gradientColor="white"
-                                gradientWidth={100}
-                            >
-                                <div className="flex gap-16 items-center h-[48px] last:pr-16">
-                                    <img
-                                        src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/68353460e39a8797e6f64f4e_marquee-logo-01.svg"
-                                        alt="" className="marquee-logo"/>
-                                    <img
-                                        src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/683534603fd5947ee8bc5fb1_marquee-logo-02.svg"
-                                        alt="" className="marquee-logo"/>
-                                    <img
-                                        src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/68353460930016f8c1865842_marquee-logo-03.svg"
-                                        alt="" className="marquee-logo"/>
-                                    <img
-                                        src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/68353460ec4b1d80f6269124_marquee-logo-04.svg"
-                                        alt="" className="marquee-logo"/>
-                                    <img
-                                        src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/68353460ec4b1d80f6269120_marquee-logo-05.svg"
-                                        alt="" className="marquee-logo"/>
-                                    <img
-                                        src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/683534603fb873b0cc291864_marquee-logo-06.svg"
-                                        alt="" className="marquee-logo"/>
-                                </div>
-                            </Marquee>
-                        </div>
+            <Section>
+                <div className="text-center flex flex-col items-center justify-start pb-16 gap-16">
+                    <div className="font-badges">Helping 100+ leading companies get better results</div>
+                    <div className="marquee">
+                        <Marquee
+                            speed={50}
+                            gradient={true}
+                            gradientColor="white"
+                            gradientWidth={100}
+                        >
+                            <div className="flex gap-16 items-center h-[48px] last:pr-16">
+                                <img
+                                    src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/68353460e39a8797e6f64f4e_marquee-logo-01.svg"
+                                    alt="" className="marquee-logo"/>
+                                <img
+                                    src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/683534603fd5947ee8bc5fb1_marquee-logo-02.svg"
+                                    alt="" className="marquee-logo"/>
+                                <img
+                                    src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/68353460930016f8c1865842_marquee-logo-03.svg"
+                                    alt="" className="marquee-logo"/>
+                                <img
+                                    src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/68353460ec4b1d80f6269124_marquee-logo-04.svg"
+                                    alt="" className="marquee-logo"/>
+                                <img
+                                    src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/68353460ec4b1d80f6269120_marquee-logo-05.svg"
+                                    alt="" className="marquee-logo"/>
+                                <img
+                                    src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/683534603fb873b0cc291864_marquee-logo-06.svg"
+                                    alt="" className="marquee-logo"/>
+                            </div>
+                        </Marquee>
                     </div>
                 </div>
-            </section>
+            </Section>
             <section className="py-28">
                 <div className="w-full px-6">
                     <div className="grid gap-16 md:grid-cols-2 place-items-center h-full">
@@ -402,7 +402,9 @@ function Home() {
                 backgroundImage="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc478b3f8c853c905c0c0_landscape-15.webp"
             />
 
-
+            <Section>
+                <ResourcesSection />
+            </Section>
         </div>
     );
 }

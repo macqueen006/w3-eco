@@ -5,7 +5,7 @@ import * as React from "react";
 
 interface ArrowLinkProps {
     to: string;
-    children: React.ReactNode;
+    children?: React.ReactNode;
     icon?: LucideIcon;
     variant?: "default" | "light" | "dark" | "outline";
     size?: "sm" | "md" | "lg";
