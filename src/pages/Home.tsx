@@ -17,6 +17,7 @@ import {Button} from "../components/ui/button.tsx";
 import {ArrowRight} from "lucide-react";
 import Marquee from "react-fast-marquee";
 import {ICON_CARDS} from "../constants/cards.ts";
+import {ServicesTabsSection} from "../components/ServicesTabsSection.tsx";
 
 function Home() {
     return (
@@ -389,6 +390,9 @@ function Home() {
                     </div>
                 </div>
             </section>
+
+            <ServicesTabsSection />
+
 
         </div>
     );

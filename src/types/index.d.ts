@@ -31,4 +31,12 @@ declare global {
         buttonText?: string;
         buttonHover?: string;
     }
+
+    interface TabData {
+        id: string;
+        title: string;
+        content: string;
+        link: string;
+    }
+
 }
