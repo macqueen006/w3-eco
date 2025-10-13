@@ -58,7 +58,6 @@
     --text-4xl--line-height: 1.11;
 
     /* ... continue this pattern for all text sizes */
-
     /* ===== SPACING ===== */
     --spacing-xs: 6px;
     --spacing-sm: 12px;
@@ -73,6 +72,10 @@
 
 /* ===== CUSTOM BASE STYLES (Complementing Tailwind v4's reset) ===== */
 @layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
     body {
         background-color: var(--color-background);
         font-family: var(--font-body), sans-serif;

@@ -38,7 +38,7 @@ function Home() {
                     </video>
                 </div>
 
-                <div className="px-6 py-12 relative w-full h-full z-10">
+                <div className="px-6 py-12 relative w-full h-full mt-auto z-10">
                     <div className="flex flex-col h-full w-full md:flex-row gap-6 justify-between items-end">
                         <div
                             className="flex flex-col p-6 backdrop-blur-[18px] opacity-[1] bg-surface/50 gap-9 rounded-sm max-w-[571px] mx-auto md:mx-0">

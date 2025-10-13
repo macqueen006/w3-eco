@@ -1,7 +1,7 @@
 import {Route, Routes} from "react-router";
 import DefaultLayout from "../layouts/DefaultLayout.tsx";
 import Home from "../pages/home/Home.tsx";
-import About from "../pages/About.tsx";
+import About from "../pages/about/About.tsx";
 import Compliance from "../pages/Compliance.tsx";
 import Trading from "../pages/Trading.tsx";
 import Contact from "../pages/Contact.tsx";
