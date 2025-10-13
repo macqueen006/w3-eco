@@ -56,4 +56,33 @@ declare global {
         columns?: 3 | 4;
     }
 
+    interface FooterLink {
+        label: string;
+        href: string;
+        external?: boolean;
+    }
+
+    interface FooterSection {
+        title: string;
+        links: FooterLink[];
+    }
+
+    interface SocialLink {
+        name: string;
+        href: string;
+        icon: string;
+    }
+
+    interface FooterProps {
+        logo?: string;
+        tagline?: string;
+        buttonText?: string;
+        buttonHref?: string;
+        copyrightText?: string;
+        poweredByText?: string;
+        disclaimer?: string;
+        sections?: FooterSection[];
+        socialLinks?: SocialLink[];
+    }
+
 }

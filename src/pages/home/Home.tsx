@@ -24,7 +24,7 @@ import {ResourcesSection} from "./ResourcesSection.tsx";
 
 function Home() {
     return (
-        <div className="z-100 min-h-screen p-[6px] flex flex-col relative">
+        <div className="z-100 min-h-screen w-full p-[6px] flex flex-col relative">
             <section
                 className="bg-secondary rounded-sm text-surface flex flex-col relative overflow-hidden justify-between flex-1">
                 <NavWrapper className="bg-transparent text-white">
@@ -56,7 +56,6 @@ function Home() {
                         }
                     />
 
-                    {/*Right navigation*/}
                     <NavInnerRight
                         button={
                             <div className="w-full hidden md:block">
@@ -74,7 +73,7 @@ function Home() {
                         }
                     />
                 </NavWrapper>
-                {/*Video Attachment*/}
+
                 <div
                     className="video absolute top-0 left-0 h-screen w-screen pointer-none z-[1] opacity-[1] hero-transform">
                     <video
@@ -94,24 +93,23 @@ function Home() {
                             data-wf-ignore="true"/>
                     </video>
                 </div>
-                {/*End video */}
-                {/*Hero text content*/}
+
                 <div className="px-6 py-12 relative w-full h-full z-10">
                     <div className="flex flex-col h-full w-full md:flex-row gap-6 justify-between items-end">
                         <div
                             className="flex flex-col p-6 backdrop-blur-[18px] opacity-[1] bg-surface/50 gap-9 rounded-sm max-w-[571px] mx-auto md:mx-0">
-                            {/* Content */}
+                             Content
                             <div className="flex flex-col justify-start gap-6">
                                 <span className="text-surface">[Lifecycle solutions]</span>
-                                <h1 className="text-surface">
-                                    Future-proof<br/>Your<br/>Operations.
-                                </h1>
+                                <h3 className="text-surface">
+                                    Future-proof Your Operations.
+                                </h3>
                                 <p className="text-[20px] leading-[28px] text-surface">
                                     At Lifecycle, we help organizations future-proof operations through smart planning,
                                     efficient systems, and sustainable execution.
                                 </p>
                             </div>
-                            {/* Button */}
+
                             <Button asChild variant="primary"
                                     className="uppercase h-14 flex items-center text-sm justify-center font-normal scale-100 hover:scale-[.95]">
                                 <Link to="/about">learn more about us</Link>
@@ -134,7 +132,7 @@ function Home() {
                                 </div>
                                 <p className="uppercase text-foreground text-sm font-badges">speak with our team</p>
                             </div>
-                            {/* Just a styled div, not a clickable button */}
+
                             <div
                                 className="inline-flex items-center justify-center rounded-full bg-primary p-3 group-hover:bg-primary/90 transition-colors">
                                 <ArrowRight className="h-6 w-6"/>
@@ -143,8 +141,9 @@ function Home() {
                     </div>
                 </div>
             </section>
+
             <Section>
-                <div className="text-center flex flex-col items-center justify-start pb-16 gap-16">
+                <div className="text-center flex flex-col items-center justify-start pb-16 gap-16 w-full overflow-hidden">
                     <div className="font-badges">Helping 100+ leading companies get better results</div>
                     <div className="marquee">
                         <Marquee
@@ -177,6 +176,7 @@ function Home() {
                     </div>
                 </div>
             </Section>
+
             <section className="py-28">
                 <div className="w-full px-6">
                     <div className="grid gap-16 md:grid-cols-2 place-items-center h-full">
@@ -361,13 +361,13 @@ function Home() {
                 </div>
             </section>
 
-            <section className="py-28 bg-linear-to-b from-surface to-background">
+            <section className="pb-28 bg-linear-to-b from-surface to-background">
                 <div className="w-full px-6">
                     <div className="flex flex-col gap-20">
                         <div
                             className="max-w-[928px] gap-6 text-center flex flex-col justify-start items-center mx-auto">
-                            <div className="text-[40px] leading-[48px] tracking-[-0.4px] text-foreground">Partner with
-                                Lifecycle to solve your most complex operational
+                            <div className="text-3xl md:text-[40px] leading-[48px] tracking-[-0.4px] text-foreground">Partner with
+                                W3-Tech to solve your most complex operational
                                 challenges.
                             </div>
                         </div>
