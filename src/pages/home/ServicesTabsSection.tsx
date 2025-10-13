@@ -1,7 +1,7 @@
 import {useState} from "react";
 import {Link} from "react-router";
-import {TABS_DATA} from "../constants/tabs.ts";
-import {Button} from "./ui/button.tsx";
+import {TABS_DATA} from "../../constants/tabs.ts";
+import {Button} from "../../components/ui/button.tsx";
 
 
 export function ServicesTabsSection() {

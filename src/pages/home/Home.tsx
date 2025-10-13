@@ -1,23 +1,24 @@
-import {MobileNav, NavInnerLeft, NavInnerRight, NavWrapper} from "../layouts/navbar";
+import {MobileNav, NavInnerLeft, NavInnerRight, NavWrapper} from "../../layouts/navbar";
 import {
     NavigationMenu,
     NavigationMenuItem,
     NavigationMenuLink,
     NavigationMenuList, navigationMenuTriggerStyle
-} from "../components/ui/navigation-menu.tsx";
+} from "../../components/ui/navigation-menu.tsx";
 import {
     Avatar,
     AvatarFallback,
     AvatarImage,
-} from "../components/ui/avatar";
-import {NAV_ITEMS} from "../constants/navigation.ts";
+} from "../../components/ui/avatar.tsx";
+import {NAV_ITEMS} from "../../constants/navigation.ts";
 import {Link} from "react-router";
-import {cn} from "../lib/utils.ts";
-import {Button} from "../components/ui/button.tsx";
+import {cn} from "../../lib/utils.ts";
+import {Button} from "../../components/ui/button.tsx";
 import {ArrowRight} from "lucide-react";
 import Marquee from "react-fast-marquee";
-import {ICON_CARDS} from "../constants/cards.ts";
-import {ServicesTabsSection} from "../components/ServicesTabsSection.tsx";
+import {ICON_CARDS} from "../../constants/cards.ts";
+import {ServicesTabsSection} from "./ServicesTabsSection.tsx";
+import ImageBackgroundSection from "./ImageBackgroundSection.tsx";
 
 function Home() {
     return (
@@ -391,7 +392,15 @@ function Home() {
                 </div>
             </section>
 
-            <ServicesTabsSection />
+            <ServicesTabsSection/>
+
+            <ImageBackgroundSection
+                badge="[our purpose]"
+                title="We Build Cleaner Solutions for Resilient Economic Environments."
+                linkText="More about us"
+                linkHref="/about"
+                backgroundImage="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc478b3f8c853c905c0c0_landscape-15.webp"
+            />
 
 
         </div>
