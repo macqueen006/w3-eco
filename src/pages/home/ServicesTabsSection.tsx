@@ -71,12 +71,7 @@ export function ServicesTabsSection() {
                         {/* Video Section */}
                         <div className="w-full aspect-square rounded-sm flex justify-center items-center relative overflow-hidden">
                             {/* Background Video */}
-                            <div
-                                className="absolute w-[110%] h-[120%] top-[-10%] left-[-5%] will-change-transform [transform-style:preserve-3d]"
-                                style={{
-                                    transform: "translate3d(0px, 9.309%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg)"
-                                }}
-                            >
+                            <div className="absolute w-[110%] h-[120%] top-[-10%] left-[-5%] will-change-transform [transform-style:preserve-3d]">
                                 <video
                                     autoPlay
                                     loop
@@ -109,7 +104,7 @@ export function ServicesTabsSection() {
                                     alt="play"
                                     className="w-6 h-6"
                                 />
-                                <span className="font-badges text-xs uppercase">play Video 3:14</span>
+                                <span className="font-badges text-xs uppercase text-white">play Video 3:14</span>
                             </a>
                         </div>
                     </div>
