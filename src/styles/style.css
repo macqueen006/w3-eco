@@ -2387,7 +2387,6 @@ figcaption {
 }
 
 .h1 {
-    font-family: var(--_typography---typefaces--headings);
     font-size: var(--_typography---type-scale--h1-size);
     line-height: var(--_typography---type-scale--h1-line-height);
     letter-spacing: var(--_typography---type-scale--h1-letter-spacing);
@@ -2395,7 +2394,6 @@ figcaption {
 }
 
 .h2 {
-    font-family: var(--_typography---typefaces--headings);
     font-size: var(--_typography---type-scale--h2-size);
     line-height: var(--_typography---type-scale--h2-line-height);
     letter-spacing: var(--_typography---type-scale--h2-letter-spacing);
@@ -2419,14 +2417,12 @@ figcaption {
 }
 
 .h4 {
-    font-family: var(--_typography---typefaces--headings);
     font-size: var(--_typography---type-scale--h4-size);
     line-height: var(--_typography---type-scale--h4-line-height);
     font-weight: 400;
 }
 
 .h5 {
-    font-family: var(--_typography---typefaces--headings);
     font-size: var(--_typography---type-scale--h5-size);
     line-height: var(--_typography---type-scale--h5-line-height);
     font-weight: 400;
@@ -2441,8 +2437,9 @@ figcaption {
 }
 
 .lead-text {
-    font-size: var(--_typography---type-scale--lead-size);
-    line-height: var(--_typography---type-scale--lead-line-height);
+    font-size: 20px;
+    line-height: 28px;
+    border: 2px solid red;
 }
 
 .lead-text.strong {
@@ -4356,7 +4353,7 @@ figcaption {
 }
 
 .lead-text-wrapper {
-    max-width: var(--_containers---5-cols);
+    max-width: 571px;
 }
 
 .tags {
