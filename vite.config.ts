@@ -13,5 +13,5 @@ export default defineConfig({
             '@': path.resolve(__dirname, './src'),
         },
     },
-    base: '/macqueen006/'
+    base: '/w3-eco/'
 })
