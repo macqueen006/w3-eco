@@ -72,7 +72,7 @@ const About = () => {
                 </div>
             </section>
             <Section>
-                <div className="grid grid-cols-2 gap-[72px] place-items-center">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-[72px] place-items-center">
                     <div className="w-full aspect-square rounded-sm flex justify-center items-center relative overflow-hidden">
                         {/* Background Video */}
                         <div
