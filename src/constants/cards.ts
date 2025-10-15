@@ -51,3 +51,29 @@ export const CARDS_DATA: CardData[] = [
         linkText: "learn more"
     }
 ];
+
+
+export const INFO_CARDS: InfoCardData[] = [
+    {
+        id: "card-1",
+        image: "https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc478bbb48d01ea8970c4_landscape-13.webp",
+        title: "Logistics Intelligence",
+        description: "Harnessing sensor data and analytics to optimize flow and predict disruptions across multi-modal networks.",
+        features: [
+            "Real-time tracking across road, rail, and air",
+            "Predictive analytics to prevent delays and inefficiencies",
+            "Integration with warehouse and fleet systems"
+        ]
+    },
+    {
+        id: "card-2",
+        image: "https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc478e5fa46ffccce4773_landscape-04.webp",
+        title: "Optimized Freight",
+        description: "Deploying solar solutions to cut emissions, reduce grid dependence, and power freight.",
+        features: [
+            "Smart battery integration for round-the-clock energy reliability",
+            "On-site solar deployment for logistics hubs and depots",
+            "Scalable energy planning for growing distribution networks"
+        ]
+    }
+];

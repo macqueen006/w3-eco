@@ -9,7 +9,7 @@ const About = () => {
                 <div className="relative z-50 mx-auto max-w-[1366px] px-6 w-full">
                     <div className="text-center flex flex-col items-center justify-start gap-6 mx-auto max-w-[928px]">
                         <div className="font-badges text-xs uppercase text-white">[about us]</div>
-                        <h2>We Build Cleaner Solutions for Resilient Economic Environments.</h2>
+                        <h2 className="text-[32px] md:text-[48px]">We Build Cleaner Solutions for Resilient Economic Environments.</h2>
 
                         <a href="#about-us" className="flex w-full gap-2 justify-center items-center cursor-pointer">
                             <div

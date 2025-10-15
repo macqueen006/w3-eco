@@ -85,4 +85,18 @@ declare global {
         socialLinks?: SocialLink[];
     }
 
+    interface InfoCardData {
+        id: string;
+        image: string;
+        title: string;
+        description: string;
+        features: string[];
+    }
+
+    interface InfoCardProps extends InfoCardData {
+        className?: string;
+    }
+
+
+
 }
