@@ -65,7 +65,7 @@ const Services = () => {
                         className="w-full aspect-square rounded-sm flex justify-center items-center relative overflow-hidden">
                         {/* Background Video */}
                         <div
-                            className="absolute w-[110%] h-[120%] top-[-10%] left-[-5%] will-change-transform [transform-style:preserve-3d]">
+                            className="absolute w-[110%] h-[120%] top-[-10%] left-[-5%]">
                             <video
                                 autoPlay
                                 loop
