@@ -5,8 +5,8 @@ import Marquee from "react-fast-marquee";
 const About = () => {
     return (
         <>
-            <section className="py-[72px] p-[6px] aspect-[2] rounded-sm bg-secondary text-white flex items-end justify-center relative overflow-clip">
-                <div className="relative z-50 mx-auto max-w-[1366px] px-6 w-full">
+            <section className="py-[72px] p-[6px] aspect-[2] h-screen w-screen rounded-sm bg-secondary text-white flex items-end justify-center relative overflow-clip">
+                <div className="relative z-50 mx-auto max-w-[1366px] px-6 w-full min-h-full">
                     <div className="text-center flex flex-col items-center justify-start gap-6 mx-auto max-w-[928px]">
                         <div className="font-badges text-xs uppercase text-white">[about us]</div>
                         <h2 className="text-[32px] md:text-[48px]">We Build Cleaner Solutions for Resilient Economic Environments.</h2>
