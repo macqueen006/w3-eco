@@ -15,10 +15,3 @@ export const MOBILE_NAV_ITEMS = [
     { to: "/contact-us", label: "Contact Us" },
 ];
 
-export const FOOTER_LINKS = [
-    // ...
-];
-
-export const SOCIAL_LINKS = [
-    // ...
-];
