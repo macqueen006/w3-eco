@@ -1,5 +1,6 @@
 import {Section} from "../components/Section.tsx";
 import Marquee from "react-fast-marquee";
+import {getAssetUrl} from "../lib/utils.ts";
 
 function Compliance() {
     return (
@@ -11,18 +12,19 @@ function Compliance() {
                         {/* Title */}
                         <div className="flex flex-col gap-[18px]">
                             <div className="font-badges text-[13px] leading-[18.2px] uppercase font-medium">
-                                [Lifecycle solutions]
+                                [CORPORATE SOLUTIONS]
                             </div>
                             <h1 className="text-3xl md:text-6xl lg:text-[60px] leading-tight font-normal">
-                                Solve Bottlenecks.<br/>Unlock Growth.
+                                Ensure Compliance. Protect Your Business.
                             </h1>
                         </div>
 
                         {/* Content */}
                         <div className="max-w-[452px] w-full">
                             <div className="text-xl leading-7">
-                                Identify the friction points holding you back—and implement scalable solutions that
-                                drive throughput and business expansion.
+                                Identify the friction points holding you back and implement scalable solutions that
+                                drive compliance, data security, and environmental responsibility throughout your
+                                business operations.
                             </div>
 
                         </div>
@@ -33,18 +35,14 @@ function Compliance() {
                         {/* Square Image */}
                         <img
                             className="aspect-square rounded-md object-cover min-h-full"
-                            src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc478b3f8c853c905c0c0_landscape-15.webp"
-                            alt=""
+                            src={getAssetUrl('img/iron.jpg')}
+                            alt="iron trash"
                             sizes="(max-width: 1440px) 100vw, 1440px"
                         />
 
                         {/* Hero Metric Box */}
                         <div
-                            className="flex flex-col gap-6 rounded-md bg-foreground text-white justify-center items-start p-6 relative overflow-hidden self-stretch will-change-transform [transform-style:preserve-3d]"
-                            style={{
-                                opacity: 1,
-                                transform: "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg)"
-                            }}
+                            className="flex flex-col gap-6 rounded-md bg-foreground text-white justify-center items-start p-6 relative overflow-hidden self-stretch"
                         >
                             {/* Noise Background */}
                             <div
@@ -68,23 +66,23 @@ function Compliance() {
 
                             <div
                                 className="font-badges text-[13px] leading-[18.2px] uppercase font-medium relative z-10">
-                                Trusted by<br/>100+ global companies
+                                TRUSTED BY ORGANIZATIONS
                             </div>
-                            <div className="text-6xl md:text-7xl font-bold relative z-10">50%</div>
+                            <div className="text-6xl md:text-7xl font-bold relative z-10">99%</div>
                             <div className="text-xl leading-7 relative z-10">
-                                Increase in top-line revenue in the first 12 months.
+                                Compliance rate in data destruction for all clients.
                             </div>
                             <img
-                                src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/6837aeb16162caf82d3f81e3_logo-intertial-small.svg"
-                                alt=""
-                                className="relative z-10"
+                                src={getAssetUrl('img/logos/logo.png')}
+                                alt="logo"
+                                className="relative z-10 size-20"
                             />
                         </div>
 
                         {/* Portrait Image */}
                         <img
                             className="aspect-[3/4] rounded-md object-cover min-h-full"
-                            src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc4782224e0a5c3efa7f7_portrait-09.webp"
+                            src={getAssetUrl('img/w-staff.jpg')}
                             alt=""
                             sizes="(max-width: 1350px) 100vw, 1350px"
                         />
@@ -96,11 +94,11 @@ function Compliance() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-[72px] place-items-center auto-cols-fr">
                     <div className="flex flex-col justify-start items-start gap-6">
                         <div className="badge-text">[Applied efficiency]</div>
-                        <div className="text-5xl">Transforming Fulfillment.</div>
+                        <div className="text-5xl">Transforming Compliance.</div>
                         <div className="lead-text-wrapper">
-                            <div className="text-lg">Whether it’s decarbonizing freight, modernizing
-                                infrastructure, or transforming supply chains, we bring the strategy and foresight
-                                needed to scale-up across entire sectors.
+                            <div className="text-lg">
+                                From regulatory compliance, data security requirements, to environmental protection, we
+                                bring the expertise and transparency needed to ensure complete regulatory adherence.
                             </div>
                         </div>
                     </div>
@@ -111,22 +109,22 @@ function Compliance() {
                                 className="flex gap-3 relative bg-primary rounded-sm overflow-hidden text-center flex-col max-w-[108px] sm:max-w-[156px] px-[6px] pt-[6px] pb-3">
                                 <div className="relative rounded-sm overflow-hidden flex flex-col gap-3">
                                     <img
-                                        src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc4783249441e9db3f46a_landscape-02.webp"
-                                        alt="" sizes="(max-width: 1440px) 100vw, 1440px"
+                                        src={getAssetUrl('img/hacking.jpg')}
+                                        alt="data security" sizes="(max-width: 1440px) 100vw, 1440px"
                                         className="rounded-sm h-24 w-24 md:w-36 md:h-36"
                                     />
-                                    <div className="badge-text">optimized<br/>energy</div>
+                                    <div className="badge-text">Data<br/>security</div>
                                 </div>
                             </div>
                             <div
                                 className="flex gap-3 relative bg-primary rounded-sm overflow-hidden text-center flex-col max-w-[108px] sm:max-w-[156px] px-[6px] pt-[6px] pb-3">
                                 <div className="relative rounded-sm overflow-hidden flex flex-col gap-3">
                                     <img
-                                        src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc479f6d7cf36b03f9d13_landscape-01.webp"
-                                        alt="" sizes="(max-width: 1440px) 100vw, 1440px"
+                                        src={getAssetUrl('img/environment.jpg')}
+                                        alt="environment" sizes="(max-width: 1440px) 100vw, 1440px"
                                         className="rounded-sm h-24 w-24 md:w-36 md:h-36"
                                     />
-                                    <div className="badge-text">optimized<br/>energy</div>
+                                    <div className="badge-text">Environmental<br/>Compliance</div>
                                 </div>
                             </div>
                         </div>
@@ -143,11 +141,13 @@ function Compliance() {
                             className="flex flex-none flex-col gap-3 rounded-sm bg-primary text-center max-w-[108px] sm:max-w-[156px] p-[6px_6px_12px]">
                             <div
                                 className="inline-flex justify-center items-center h-24 w-24 sm:w-36 md:h-36 rounded-sm bg-[#3b3b3333]">
-                                <img alt=""
-                                     className=""
-                                     src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc03ed96832163a6db842_icon-radar.svg"/>
+                                <img
+                                    src={getAssetUrl('img/certificate.jpg')}
+                                    alt="certificate" sizes="(max-width: 1440px) 100vw, 1440px"
+                                    className="rounded-sm h-24 w-24 md:w-36 md:h-36"
+                                />
                             </div>
-                            <div className="font-badges text-xs uppercase">accelerated fulfillment</div>
+                            <div className="font-badges text-xs uppercase">certified <br/> Recycler</div>
                         </div>
 
                     </div>
@@ -161,12 +161,12 @@ function Compliance() {
 
                         <div className="flex flex-col justify-start items-start gap-6">
                             <div className="badge-text">[our purpose]</div>
-                            <div className="text-5xl">Architecting Solutions that Power Renewables.</div>
+                            <div className="text-5xl">Architecting Solutions that Ensure Full Compliance.</div>
                             <div className="max-w-[571px]">
-                                <div className="text-2xl">We design infrastructure, systems, and strategies that
-                                    accelerate the transition to clean energy—without disrupting operations. From
-                                    logistics hubs to on-site generation, we help integrate renewables intelligently and
-                                    at scale.
+                                <div className="text-2xl">We design comprehensive compliance frameworks and systems that
+                                    ensure adherence to all federal and state e-waste regulations without disrupting
+                                    operations. From secure data destruction to environmental protection, we help
+                                    organizations meet all regulatory requirements intelligently and at scale.
                                 </div>
                             </div>
                         </div>
@@ -174,13 +174,15 @@ function Compliance() {
                     </div>
 
                     <div
-                        className="aspect-square rounded-sm flex justify-center items-center w-full relative overflow-hidden col-start-1 row-start-1">
+                        className="relative rounded-sm flex justify-center items-center w-full h-full overflow-hidden col-start-1 row-start-1">
                         <img
-                            className="aspect-square rounded-sm w-[110%] max-w-none min-h-[130%]"
-                            data-speed="0.8"
-                            src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc4785fb432f845493f1c_portrait-06.webp"
-                            alt="" sizes="(max-width: 1350px) 100vw, 1350px"/>
+                            src={getAssetUrl('img/dashboard.png')}
+                            alt="Dashboard"
+                            className="absolute inset-0 w-full h-full object-cover rounded-sm"
+                            sizes="(max-width: 1350px) 100vw, 1350px"
+                        />
                     </div>
+
                 </div>
             </Section>
 
@@ -189,7 +191,7 @@ function Compliance() {
 
                     <div className="aspect-[2.39] rounded-md w-full h-auto relative overflow-hidden">
                         <img
-                            src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc4787083792398c6daf4_landscape-03.webp"
+                            src={getAssetUrl('img/w3-members.jpg')}
                             alt="" sizes="(max-width: 1440px) 100vw, 1440px"
                             className="w-full max-w-none h-[130%] absolute top-[-15%]"/>
                     </div>
@@ -201,14 +203,15 @@ function Compliance() {
                                 <img alt=""
                                      sizes="(max-width: 1440px) 100vw, 1440px"
                                      className="rounded-sm h-24 w-24 md:w-36 md:h-36"
-                                     src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc4783249441e9db3f46a_landscape-02.webp"/>
+                                     src={getAssetUrl('img/lightbulb.jpg')}
+                                />
                                 <div className="badge-text">optimized<br/>energy</div>
                             </div>
                         </div>
 
                         <div
                             className="hidden sm:flex flex-col text-center flex-1 py-1.5 border-b border-dotted border-[var(--_colors---ui--dark)]">
-                            <div className="badge-text">Lifecycle Consulting</div>
+                            <div className="badge-text">REGULATORY COMPLIANCE GUARANTEED</div>
                         </div>
 
                         <div
