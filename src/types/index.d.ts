@@ -86,11 +86,11 @@ declare global {
     }
 
     interface InfoCardData {
-        id: string;
-        image: string;
-        title: string;
-        description: string;
-        features: string[];
+        id?: string;
+        image?: string;
+        title?: string;
+        description?: string;
+        features?: string[];
     }
 
     interface InfoCardProps extends InfoCardData {
