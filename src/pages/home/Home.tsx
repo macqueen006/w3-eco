@@ -44,12 +44,15 @@ function Home() {
                         <div
                             className="flex flex-col p-6 backdrop-blur-[18px] opacity-[1] bg-surface/50 gap-9 rounded-sm max-w-[571px] mx-auto md:mx-0">
                             <div className="flex flex-col justify-start gap-6">
-                                <span className="text-surface">[Safeguarding Organizations, People, and the Environment]</span>
-                                <h3 className="text-surface">
+                                <span
+                                    className="text-surface">[Safeguarding Organizations, People, and the Environment]</span>
+                                <h3 className="text-surface text-2xl sm:text-3xl md:text-4xl font-semibold">
                                     Nigeria's Leading Material Recovery and E-Waste Management Company
                                 </h3>
-                                <p className="text-[20px] leading-[28px] text-surface">
-                                    With our eco-friendly certifications and expert team, we ensure clients comply with varying federal and state e-waste-related laws and regulations across all industries.
+                                <p className="text-lg sm:text-[20px] leading-[28px] text-surface">
+                                    With our eco-friendly certifications and expert team, we ensure clients comply with
+                                    varying federal and state e-waste-related laws and regulations across all
+                                    industries.
                                 </p>
                             </div>
 
@@ -139,13 +142,16 @@ function Home() {
                                     <div className="font-badges uppercase text-sm">more information</div>
                                 </Link>
                             </div>
-                            <div className="flex flex-col gap-6 items-start justify-start max-w-[571px] pl-9 border-l border-dotted border-foreground">
-                               {/* <img
+                            <div
+                                className="flex flex-col gap-6 items-start justify-start max-w-[571px] pl-9 border-l border-dotted border-foreground">
+                                {/* <img
                                     src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/68353460930016f8c1865842_marquee-logo-03.svg"
                                     alt=""/>*/}
                                 <span className="uppercase test-xs">W3-eco-friendly</span>
                                 <div className="leading-[22.4px]">“W3Tech™ Portal
-                                    Access real-time transparency into your e-waste management. Our online downstream recycling chain and IT asset disposition portal provides complete visibility and tracking of material through every stage of processing”
+                                    Access real-time transparency into your e-waste management. Our online downstream
+                                    recycling chain and IT asset disposition portal provides complete visibility and
+                                    tracking of material through every stage of processing”
                                 </div>
                                 <div className="flex items-end justify-start gap-3">
                                     <Avatar className="rounded-full size-[71px]">
@@ -195,7 +201,8 @@ function Home() {
                                                 src={getAssetUrl('/img/electronic-recycling.jpg')}
                                                 alt="" sizes="(max-width: 1440px) 100vw, 1440px"
                                                 className="z-20 rounded-sm"/>
-                                            <div className="text-xs uppercase font-badges text-white z-10">Electronic<br/>Recycling
+                                            <div
+                                                className="text-xs uppercase font-badges text-white z-10">Electronic<br/>Recycling
                                             </div>
                                         </div>
                                         <div
@@ -240,33 +247,36 @@ function Home() {
                                         className="flex gap-6 border-b border-dotted border-slate-500 items-center justify-start py-6">
                                         <div
                                             className="size-[60px] shrink-0 flex justify-center items-center bg-foreground text-surface rounded-sm">
-                                            <Lock />
+                                            <Lock/>
                                         </div>
                                         <div className="max-w-[425px]">
                                             99% Data Destruction
-                                            Guaranteed destruction on virtually any data bearing device with full chain of custody documentation.
+                                            Guaranteed destruction on virtually any data bearing device with full chain
+                                            of custody documentation.
                                         </div>
                                     </div>
                                     <div
                                         className="flex gap-6 border-b border-dotted border-slate-500 items-center justify-start py-6">
                                         <div
                                             className="size-[60px] shrink-0 flex justify-center items-center bg-foreground text-surface rounded-sm">
-                                            <ChartLine />
+                                            <ChartLine/>
                                         </div>
                                         <div className="max-w-[425px]">
                                             Maximum Asset Value
-                                            Maximize recovery value from retired IT assets through expert remarketing and responsible recycling.
+                                            Maximize recovery value from retired IT assets through expert remarketing
+                                            and responsible recycling.
                                         </div>
                                     </div>
                                     <div
                                         className="flex gap-6 border-b border-dotted border-slate-500 items-center justify-start py-6">
                                         <div
                                             className="size-[60px] shrink-0 flex justify-center items-center bg-foreground text-surface rounded-sm">
-                                            <Check />
+                                            <Check/>
                                         </div>
                                         <div className="max-w-[425px]">
                                             Full Regulatory Compliance
-                                            Meet all federal and state e-waste regulations while protecting your organization from fines and reputational risk.
+                                            Meet all federal and state e-waste regulations while protecting your
+                                            organization from fines and reputational risk.
                                         </div>
                                     </div>
                                 </div>

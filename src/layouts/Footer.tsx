@@ -82,7 +82,7 @@ function Footer({
                         </div>
 
                         <div className="flex gap-[30px] items-center">
-                        {socialLinks.map((social, index) => (
+                            {socialLinks.map((social, index) => (
                                 <a
                                     key={index}
                                     href={social.href}
