@@ -1,57 +1,56 @@
 export const ICON_CARDS = [
     {
         id: "ce0208e5-2d05-915c-f1f2-2362ef48e001",
-        icon: "https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc03ed96832163a6db831_icon-journey.svg",
-        title: "Optimized Freight",
-        description: "Deploying solar solutions to cut emissions, reduce grid dependence, and power freight."
+        icon: "img/icons/server.svg",
+        title: "Electronics & IT Asset Disposition",
+        description: "Securely and responsibly reuse or recycle electronic assets with complete data destruction and compliance"
     },
     {
         id: "4831b026-cc61-6eb0-f14c-dffc8b2c4a7e",
-        icon: "https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc03ebbb48d01ea86a5f8_icon-layers.svg",
-        title: "Wind Energy",
-        description: "Advising on-site and off-site wind integration to help logistics operations transition to Zero Emissions."
+        icon: "img/icons/hard-drive.svg",
+        title: "Data Destruction",
+        description: "Guaranteed data destruction on virtually any data bearing device with on-site or off-site services"
     },
     {
         id: "717d98ba-47ce-6fa0-ade5-b541666caa80",
-        icon: "https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc03e823d5a3deb38470d_icon-code-fork.svg",
-        title: "Logistics Intelligence",
-        description: "Harnessing sensor data and analytics to optimize flow and predict disruptions across multi-modal networks."
+        icon: "img/icons/recycle.svg",
+        title: "Electronics Recycling",
+        description: "Recover commodities and materials from old electronic devices. Annual capacity up to 100,000 tons."
     },
     {
         id: "60161f90-43f3-c2c4-8fa1-116024a64559",
-        icon: "https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc03e62bdab928f9955fd_icon-duration-finance.svg",
-        title: "Always-On",
-        description: "Ensuring uptime with smart monitoring, remote diagnostics, and connectivity strategies."
+        icon: "img/icons/solar-panel.svg",
+        title: "PV/Solar Management",
+        description: "Safe recycling of photovoltaic panels and equipment with specialized end-of-life management."
     }
 ];
 
 export const CARDS_DATA: CardData[] = [
     {
         id: "card-1",
-        image: "https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc4783249441e9db3f46a_landscape-02.webp",
-        title: "Smart Logistics",
-        description: "Optimizing freight systems with data-driven strategies.",
-        link: "/our-services",
+        image: "img/electric-data-center.jpg",
+        title: "Data Center Decommissioning",
+        description: "Optimizing freight systems with data-driven logistics and maximum resale value.",
+        link: "/services",
         linkText: "learn more"
     },
     {
         id: "card-2",
-        image: "https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc4788a37af277877951f_landscape-10.webp",
-        title: "Regenerative Agriculture",
-        description: "Helping scale climate-smart practices that restore land health.",
-        link: "/our-process",
+        image: "img/circuit-board.jpg",
+        title: "Regulatory Compliance",
+        description: "Helping organizations maintain protection that meets all federal and state requirements.",
+        link: "/services",
         linkText: "learn more"
     },
     {
         id: "card-3",
-        image: "https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc479b5154809023ec17d_landscape-12.webp",
-        title: "Enviro-Intelligence",
-        description: "Turning raw environmental data into actionable insight.",
-        link: "/industries",
+        image: "img/solar-panel.jpg",
+        title: "Circular Economy",
+        description: "Turning raw waste materials into data and materials for remanufacturing.",
+        link: "/services",
         linkText: "learn more"
     }
 ];
-
 
 export const INFO_CARDS: InfoCardData[] = [
     {

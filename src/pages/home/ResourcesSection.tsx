@@ -3,7 +3,12 @@ import {ResourceCard} from "../../components/ResourceCard.tsx";
 import {CARDS_DATA} from "../../constants/cards.ts";
 
 
-export function ResourcesSection ({badge = "[more information]", title = "Resources & Information", description = "We analyze and redesign logistics networks to improve efficiency, reduce emissions, and build resilience. From route planning to warehouse integration.", cards = CARDS_DATA, columns = 3
+export function ResourcesSection ({
+badge = "[more information]",
+title = "Resources & Information",
+description = "Our services and technology platforms contribute to improving data security, environmental protection, and supply chain transparency throughout the e-waste recycling process.",
+cards = CARDS_DATA,
+columns = 3
 }: ResourcesSectionProps) {
     const gridCols = columns === 3 ? "lg:grid-cols-3" : "lg:grid-cols-4";
 

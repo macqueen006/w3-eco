@@ -20,15 +20,9 @@ function ImageBackgroundSection({badge = "[our purpose]", title = "We Build Clea
             className="py-[72px] aspect-[2/1] rounded-md bg-secondary text-white flex justify-center items-end relative overflow-clip">
             {/* Container */}
             <div className="z-[3] max-w-7xl w-full mx-auto px-6 relative">
-                <div
-                    className="flex flex-col gap-6 will-change-transform [transform-style:preserve-3d]"
-                    style={{
-                        transform: "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg)",
-                        opacity: 1
-                    }}
-                >
+                <div className="flex flex-col gap-6 will-change-transform [transform-style:preserve-3d]">
                     <div className="font-badges text-xs uppercase">{badge}</div>
-                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold max-w-4xl leading-tight">
+                    <h2 className="text-3xl md:text-4xl font-bold max-w-4xl leading-tight">
                         {title}
                     </h2>
                     <ArrowLink to={linkHref} size="md" variant="default" className="text-white">
@@ -63,11 +57,7 @@ function ImageBackgroundSection({badge = "[our purpose]", title = "We Build Clea
 
             {/* Blur Scrim Overlay */}
             <div
-                className="absolute bottom-0 w-full h-[60%] z-[1] backdrop-blur-[12px]"
-                style={{
-                    WebkitMaskImage: "linear-gradient(to top, #000 50%, transparent 100%)",
-                    maskImage: "linear-gradient(to top, #000 50%, transparent 100%)"
-                }}
+                className="absolute bottom-0 w-full h-[70%] z-[1] backdrop-blur-[3px]"
             />
         </section>
     );

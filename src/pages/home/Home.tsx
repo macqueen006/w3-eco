@@ -5,13 +5,14 @@ import {
 } from "../../components/ui/avatar.tsx";
 import {Link} from "react-router";
 import {Button} from "../../components/ui/button.tsx";
-import {ArrowRight} from "lucide-react";
+import {ArrowRight, ChartLine, Check, Lock} from "lucide-react";
 import Marquee from "react-fast-marquee";
 import {ICON_CARDS} from "../../constants/cards.ts";
 import {ServicesTabsSection} from "./ServicesTabsSection.tsx";
 import ImageBackgroundSection from "./ImageBackgroundSection.tsx";
 import {Section} from "../../components/Section.tsx";
 import {ResourcesSection} from "./ResourcesSection.tsx";
+import {getAssetUrl} from "../../lib/utils.ts";
 
 function Home() {
     return (
@@ -43,23 +44,22 @@ function Home() {
                         <div
                             className="flex flex-col p-6 backdrop-blur-[18px] opacity-[1] bg-surface/50 gap-9 rounded-sm max-w-[571px] mx-auto md:mx-0">
                             <div className="flex flex-col justify-start gap-6">
-                                <span className="text-surface">[Lifecycle solutions]</span>
+                                <span className="text-surface">[Safeguarding Organizations, People, and the Environment]</span>
                                 <h3 className="text-surface">
-                                    Future-proof Your Operations.
+                                    Nigeria's Leading Material Recovery and E-Waste Management Company
                                 </h3>
                                 <p className="text-[20px] leading-[28px] text-surface">
-                                    At Lifecycle, we help organizations future-proof operations through smart planning,
-                                    efficient systems, and sustainable execution.
+                                    With our eco-friendly certifications and expert team, we ensure clients comply with varying federal and state e-waste-related laws and regulations across all industries.
                                 </p>
                             </div>
 
                             <Button asChild variant="primary"
                                     className="uppercase h-14 flex items-center text-sm justify-center font-normal scale-100 hover:scale-[.95]">
-                                <Link to="/about">learn more about us</Link>
+                                <Link to="/contact-us">Get Started</Link>
                             </Button>
                         </div>
 
-                        <Link to="/about"
+                        <Link to="/services"
                               className="p-3 bg-surface max-w-[452px] mx-auto md:mx-0 text-foreground w-full flex items-center rounded-sm justify-between group hover:bg-surface/80 transition-colors">
                             <div className="flex justify-start items-center gap-3">
                                 <div
@@ -73,7 +73,7 @@ function Home() {
                                         <AvatarFallback>LR</AvatarFallback>
                                     </Avatar>
                                 </div>
-                                <p className="uppercase text-foreground text-sm font-badges">speak with our team</p>
+                                <p className="uppercase text-foreground text-sm font-badges">Our Services</p>
                             </div>
 
                             <div
@@ -126,9 +126,9 @@ function Home() {
                     <div className="grid gap-16 md:grid-cols-2 place-items-center h-full">
                         <div className="py-[6px] justify-between flex flex-col gap-16">
                             <div className="flex flex-col gap-6 items-start justify-start">
-                                <div className="font-badges">[Applied efficiency]</div>
-                                <div className="text-[51px] leading-[58.65px] -tracking-[0.51]">Optimize Operations with
-                                    Real-time Data.
+                                <div className="font-badges">[Optimize Operations with Real-time Data.]</div>
+                                <div className="text-[51px] leading-[58.65px] -tracking-[0.51]">
+                                    ITAD & E-WASTE MANAGEMENT
                                 </div>
                                 <Link to="/about"
                                       className="flex w-full gap-2 justify-start items-center">
@@ -139,27 +139,25 @@ function Home() {
                                     <div className="font-badges uppercase text-sm">more information</div>
                                 </Link>
                             </div>
-                            <div
-                                className="flex flex-col gap-6 items-start justify-start max-w-[571px] pl-9 border-l border-dotted border-foreground">
-                                <img
+                            <div className="flex flex-col gap-6 items-start justify-start max-w-[571px] pl-9 border-l border-dotted border-foreground">
+                               {/* <img
                                     src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/68353460930016f8c1865842_marquee-logo-03.svg"
-                                    alt=""/>
-                                <div className="leading-[22.4px]">“This team understood the nuance of our industry and
-                                    helped us map a way forward
-                                    that was both ambitious and achievable. Their advice wasn’t theoretical—it was
-                                    grounded, actionable, and already making a real difference.”
+                                    alt=""/>*/}
+                                <span className="uppercase test-xs">W3-eco-friendly</span>
+                                <div className="leading-[22.4px]">“W3Tech™ Portal
+                                    Access real-time transparency into your e-waste management. Our online downstream recycling chain and IT asset disposition portal provides complete visibility and tracking of material through every stage of processing”
                                 </div>
                                 <div className="flex items-end justify-start gap-3">
-                                    <Avatar className="rounded-full w-[54px] h-[71px]">
+                                    <Avatar className="rounded-full size-[71px]">
                                         <AvatarImage
-                                            src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc478b5154809023ec147_customer-02.webp"
-                                            alt="@evilrabbit"
+                                            src={getAssetUrl("/img/logos/logo.png")}
+                                            alt="w3-eco-friendly logo"
                                         />
-                                        <AvatarFallback>ER</AvatarFallback>
+                                        <AvatarFallback>W3</AvatarFallback>
                                     </Avatar>
                                     <div>
-                                        <div className="font-badges text-xs uppercase">jaya kowalski</div>
-                                        <div className="font-badges text-xs uppercase">head of product</div>
+                                        <div className="font-badges text-xs uppercase">Certified E-Waste Recycler</div>
+                                        <div className="font-badges text-xs uppercase">Licensed by Lagos state</div>
                                     </div>
                                 </div>
                             </div>
@@ -169,14 +167,9 @@ function Home() {
                             <div className="absolute w-full h-full overflow-hidden">
                                 <img
                                     className="absolute w-full h-full object-cover"
-                                    src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc478235512b0e740acbe_landscape-18.webp"
-                                    alt=""
+                                    src={getAssetUrl('/img/data-center.jpg')}
+                                    alt="data center"
                                     sizes="(max-width: 1440px) 100vw, 1440px"
-                                    style={{
-                                        willChange: "transform",
-                                        transform: "translate3d(0px, 2.4998%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg)",
-                                        transformStyle: "preserve-3d"
-                                    }}
                                 />
                                 <div className="absolute w-full h-full backdrop-blur-[18px] bg-surface/10"></div>
                             </div>
@@ -186,24 +179,23 @@ function Home() {
                                         className="flex gap-3 relative rounded-sm overflow-hidden text-center flex-col max-w-[156px] px-[6px] pt-[6px] pb-3">
                                         <div className="relative rounded-sm overflow-hidden flex flex-col gap-3">
                                             <img
-                                                src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc4783249441e9db3f46a_landscape-02.webp"
+                                                src={getAssetUrl('/img/data-processed.jpg')}
                                                 alt="" sizes="(max-width: 1440px) 100vw, 1440px"
                                                 className="z-20 rounded-sm"/>
-                                            <div className="text-xs uppercase font-badges text-white z-10">solar<br/>potential
+                                            <div className="text-xs uppercase font-badges text-white z-10">Data<br/>Processed
                                             </div>
                                         </div>
                                         <div
                                             className="absolute top-0 left-0 w-full h-full backdrop-blur-[18px] bg-surface/30"></div>
                                     </div>
-
                                     <div
                                         className="flex gap-3 relative rounded-sm overflow-hidden text-center flex-col max-w-[156px] px-[6px] pt-[6px] pb-3">
                                         <div className="relative rounded-sm overflow-hidden flex flex-col gap-3">
                                             <img
-                                                src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc479b5154809023ec17d_landscape-12.webp"
+                                                src={getAssetUrl('/img/electronic-recycling.jpg')}
                                                 alt="" sizes="(max-width: 1440px) 100vw, 1440px"
                                                 className="z-20 rounded-sm"/>
-                                            <div className="text-xs uppercase font-badges text-white z-10">logistic<br/>frameworks
+                                            <div className="text-xs uppercase font-badges text-white z-10">Electronic<br/>Recycling
                                             </div>
                                         </div>
                                         <div
@@ -221,10 +213,10 @@ function Home() {
                                     <div
                                         className="inline-flex justify-center items-center w-36 h-36 rounded-sm bg-[#3b3b3333]">
                                         <img
-                                            src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc03ed96832163a6db842_icon-radar.svg"
-                                            alt=""/>
+                                            src={getAssetUrl('/img/handling-waste.jpg')}
+                                            alt="e-waste management handlling"/>
                                     </div>
-                                    <div className="font-badges text-xs uppercase">accelerated fulfillment</div>
+                                    <div className="font-badges text-xs uppercase">handling waste</div>
                                 </div>
                             </div>
                         </div>
@@ -237,17 +229,10 @@ function Home() {
                     <div className="grid gap-16 md:grid-cols-2 h-auto relative">
                         <div className="py-[6px] flex flex-col gap-16">
                             <div className="flex flex-col items-start justify-start gap-6">
-                                <div className="font-badges text-xs uppercase">[our purpose]</div>
+                                <div className="font-badges text-xs uppercase">[DATA SECURITY & COMPLIANCE]</div>
                                 <div className="text-[51px] leading-[58.65px] -tracking-[0.51]">
-                                    Delivering Low-Emissions Infrastructure.
+                                    Delivering Secure Data Destruction & Asset Recovery.
                                 </div>
-                                <Link to="/about" className="flex w-full gap-2 justify-start items-center">
-                                    <div
-                                        className="inline-flex items-center justify-center rounded-full bg-primary p-3 group-hover:bg-primary/90 transition-colors">
-                                        <ArrowRight className="h-6 w-6"/>
-                                    </div>
-                                    <div className="font-badges uppercase text-sm">our processes</div>
-                                </Link>
                             </div>
                             <div>
                                 <div className="border-t border-slate-300">
@@ -255,39 +240,33 @@ function Home() {
                                         className="flex gap-6 border-b border-dotted border-slate-500 items-center justify-start py-6">
                                         <div
                                             className="size-[60px] shrink-0 flex justify-center items-center bg-foreground text-surface rounded-sm">
-                                            <img
-                                                src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc03e584218f3051169c3_icon-my-location-light.svg"
-                                                alt="" className="size-9"/>
+                                            <Lock />
                                         </div>
                                         <div className="max-w-[425px]">
-                                            Deploying solar solutions to cut emissions, reduce grid dependence, and
-                                            power freight.
+                                            99% Data Destruction
+                                            Guaranteed destruction on virtually any data bearing device with full chain of custody documentation.
                                         </div>
                                     </div>
                                     <div
                                         className="flex gap-6 border-b border-dotted border-slate-500 items-center justify-start py-6">
                                         <div
                                             className="size-[60px] shrink-0 flex justify-center items-center bg-foreground text-surface rounded-sm">
-                                            <img
-                                                src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc03e438e97278eb4cba0_icon-forest-light.svg"
-                                                alt="" className="size-9"/>
+                                            <ChartLine />
                                         </div>
                                         <div className="max-w-[425px]">
-                                            Advising on-site and off-site wind integration to help logistics operations
-                                            transition to Zero Emissions.
+                                            Maximum Asset Value
+                                            Maximize recovery value from retired IT assets through expert remarketing and responsible recycling.
                                         </div>
                                     </div>
                                     <div
                                         className="flex gap-6 border-b border-dotted border-slate-500 items-center justify-start py-6">
                                         <div
                                             className="size-[60px] shrink-0 flex justify-center items-center bg-foreground text-surface rounded-sm">
-                                            <img
-                                                src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc03e90f8bdd05370ec4b_icon-map-pinpoint-light.svg"
-                                                alt="" className="size-9"/>
+                                            <Check />
                                         </div>
                                         <div className="max-w-[425px]">
-                                            Harnessing sensor data and analytics to optimize flow and predict
-                                            disruptions across multi-modal networks.
+                                            Full Regulatory Compliance
+                                            Meet all federal and state e-waste regulations while protecting your organization from fines and reputational risk.
                                         </div>
                                     </div>
                                 </div>
@@ -297,8 +276,8 @@ function Home() {
                         <div className="max-h-[623px] min-h-full overflow-hidden relative rounded-sm">
                             <img
                                 className="rounded-sm h-full w-full object-cover"
-                                src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc478823d5a3deb3b4427_portrait-02.webp"
-                                alt=""
+                                src={getAssetUrl('/img/data-destruction.jpg')}
+                                alt="data destruction"
                             />
                         </div>
                     </div>
@@ -311,7 +290,8 @@ function Home() {
                         <div
                             className="max-w-[928px] gap-6 text-center flex flex-col justify-start items-center mx-auto">
                             <div
-                                className="text-3xl md:text-[40px] leading-[48px] tracking-[-0.4px] text-foreground">Partner
+                                className="text-3xl md:text-[40px] leading-[48px] tracking-[-0.4px] text-foreground">
+                                Partner
                                 with
                                 W3-Tech to solve your most complex operational
                                 challenges.
@@ -325,7 +305,7 @@ function Home() {
                                 >
                                     <div
                                         className="flex justify-center items-center w-auto h-auto p-[18px] rounded-sm bg-primary flex-none">
-                                        <img src={card.icon} alt=""/>
+                                        <img src={card.icon} className="size-9" alt=""/>
                                     </div>
                                     <div className="flex flex-col gap-3">
                                         <div className="text-lg font-semibold">{card.title}</div>
@@ -341,11 +321,11 @@ function Home() {
             <ServicesTabsSection/>
 
             <ImageBackgroundSection
-                badge="[our purpose]"
-                title="We Build Cleaner Solutions for Resilient Economic Environments."
+                badge="[OUR MISSION]"
+                title="At W3 Eco-Friendly Ltd, our mission is to revolutionize e-waste management in Nigeria by promoting sustainable practices, fostering a circular economy, and protecting the environment through innovative recycling and material recovery solutions."
                 linkText="More about us"
                 linkHref="/about"
-                backgroundImage="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/682fc478b3f8c853c905c0c0_landscape-15.webp"
+                backgroundImage="img/sustainability.jpg"
             />
 
             <Section>

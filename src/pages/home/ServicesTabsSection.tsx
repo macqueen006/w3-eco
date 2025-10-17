@@ -5,7 +5,7 @@ import {Button} from "../../components/ui/button.tsx";
 
 
 export function ServicesTabsSection() {
-    const [activeTab, setActiveTab] = useState(3); // Default to last tab (index 3)
+    const [activeTab, setActiveTab] = useState(3);
 
     return (
         <section className="py-28 bg-secondary text-white relative">
@@ -78,21 +78,21 @@ export function ServicesTabsSection() {
                                     muted
                                     playsInline
                                     className="w-full h-full object-cover"
-                                    poster="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018%2F6836587d55725b2a9f834bc7_5200378-hd_1920_1080_30fps-poster-00001.jpg"
+                                    poster="img/processor-poster.jpg"
                                 >
                                     <source
-                                        src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018%2F6836587d55725b2a9f834bc7_5200378-hd_1920_1080_30fps-transcode.mp4"
+                                        src="videos/processor.webm"
                                         type="video/mp4"
                                     />
                                     <source
-                                        src="https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018%2F6836587d55725b2a9f834bc7_5200378-hd_1920_1080_30fps-transcode.webm"
+                                        src="videos/processor.mp4"
                                         type="video/webm"
                                     />
                                 </video>
                             </div>
 
                             {/* Play Button Overlay */}
-                            <a
+                          {/*  <a
                                 href="https://www.youtube.com/watch?v=u7zm19YgQBA&t=141s"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -105,7 +105,7 @@ export function ServicesTabsSection() {
                                     className="w-6 h-6"
                                 />
                                 <span className="font-badges text-xs uppercase text-white">play Video 3:14</span>
-                            </a>
+                            </a>*/}
                         </div>
                     </div>
                 </div>

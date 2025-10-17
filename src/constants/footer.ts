@@ -3,27 +3,27 @@ export const FOOTER_SECTIONS: FooterSection[] = [
         title: "[Main pages]",
         links: [
             {label: "Home", href: "/"},
-            {label: "Our Services", href: "/our-services"},
-            {label: "Process", href: "/our-process"},
-            {label: "Industries", href: "/industries"},
-            {label: "Customers", href: "/customers"}
+            {label: "compliance", href: "/compliance"},
+            {label: "Our Services", href: "/services"}
         ]
     },
     {
-        title: "[inner pages]",
+        title: "[learn more]",
         links: [
             {label: "About Us", href: "/about"},
-            {label: "Blog", href: "/blog"},
-            {label: "Contact", href: "/contact"}
+            {label: "Contact", href: "/contact-us"}
         ]
     },
     {
-        title: "[Template]",
+        title: "[Business Hours]",
         links: [
-            {label: "Style Guide", href: "/template/style-guide"},
-            {label: "Licenses", href: "/template/licenses"},
-            {label: "Changelog", href: "/template/changelog"},
-            // {label: "More Templates", href: "https://mediumrare.shop", external: true}
+            {
+                label: `Business Hours:
+                        Mon - Fri: 8:00 AM - 6:00 PM
+                        Sat: 9:00 AM - 2:00 PM
+                        Sun: Closed`,
+                href: "#"
+            },
         ]
     }
 ];

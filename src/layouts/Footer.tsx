@@ -3,11 +3,11 @@ import {FOOTER_SECTIONS, SOCIAL_LINKS} from "../constants/footer.ts";
 
 
 function Footer({
-                    logo = "https://cdn.prod.website-files.com/682d1ea72a8dbd92c55d9018/68465530cad72707fd6d1674_logo-lifecycle-light.svg",
-                    tagline = "Guiding industries through sustainable transitions with bold thinking and technical precision.",
-                    copyrightText = "© Copyright",
-                    poweredByText = "Powered by",
-                    disclaimer = "Begin with a statement acknowledging the company's registration status. This should include a placeholder for a generic location and a fictitious registration number, for example, \"Registered in [Location], NGN (No. XX-123456)\". The text should mention the company's authorization under a specific state department, citing a relevant act. Include a placeholder for a license number, like \"Authorized by the [State Department of Business Oversight] under the [State Money Transmission Act] (License No. YZ-987654).\"",
+                    logo = "img/logos/logo.png",
+                    tagline = "Guiding industries through sustainable transitions with data driven demand precision",
+                    copyrightText = "© 2025 W3 ECO FRIENDLY. All Rights Reserved.",
+                    poweredByText = "Website by",
+                    disclaimer = "W3 Eco-Friendly Limited is registered in Lagos State, Nigeria (RC No. 1234567) and certified by the Lagos State Environmental Protection Agency (LASEPA) as an authorized E-waste Collector and Recycler (License No. LASEPA/EW-2019/045)",
                     sections = FOOTER_SECTIONS,
                     socialLinks = SOCIAL_LINKS
                 }: FooterProps) {
@@ -28,9 +28,9 @@ function Footer({
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 auto-cols-fr">
                         <div className="max-w-[var(--_containers---4-cols)] flex flex-col gap-9 items-start">
                             <Link to="/" className="inline-block max-w-full">
-                                <img src={logo} alt="logo" className="h-9"/>
+                                <img src={logo} alt="logo" className="size-16"/>
                             </Link>
-                            <h5 className="text-[25px] leading-[31.25px] font-normal">
+                            <h5 className="text-2xl leading-[31.25px] font-normal">
                                 {tagline}
                             </h5>
                         </div>
@@ -71,32 +71,18 @@ function Footer({
 
                     <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
                         <div className="flex flex-col gap-[3px] items-start">
-                            <div className="text-sm">
-                                {copyrightText}{" "}
-                                <a
-                                    href="https://mediumrare.shop"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="underline hover:opacity-70 transition-opacity text-surface"
-                                >
-                                    W3-Technology
-                                </a>
+                            <div className="text-xs">
+                                {copyrightText}
                             </div>
-                            <div className="text-sm opacity-60">
+                            <div className="text-xs opacity-60">
                                 {poweredByText}{" "}
-                                <a
-                                    href="#"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="underline hover:opacity-70 transition-opacity text-surface"
-                                >
-                                    Magnet
-                                </a>
+                                <a href="mailto:ogbrukomogodwin@gmail.com"
+                                   className="text-yellow-400 hover:text-yellow-300 underline">Macqueen006</a>
                             </div>
                         </div>
 
                         <div className="flex gap-[30px] items-center">
-                            {socialLinks.map((social, index) => (
+                        {socialLinks.map((social, index) => (
                                 <a
                                     key={index}
                                     href={social.href}
