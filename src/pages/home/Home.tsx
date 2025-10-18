@@ -91,7 +91,7 @@ function Home() {
             <Section>
                 <div
                     className="text-center flex flex-col items-center justify-start pb-16 gap-16 w-full overflow-hidden">
-                    <div className="font-badges">Helping 100+ leading companies get better results</div>
+                    <div className="font-badges">Certified E-Waste Recycler Serving Organizations Across Nigeria</div>
                     <div className="marquee">
                         <Marquee
                             speed={50}

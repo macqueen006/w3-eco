@@ -27,8 +27,8 @@ const Services = () => {
 
                                 <div
                                     className="flex flex-col sm:flex-row gap-12 border-t border-dotted border-background justify-start items-start sm:items-center self-stretch max-w-full pt-6 overflow-hidden">
-                                    <div className="badge-text logo-addendum-title shrink-0">Trusted by<br/>100+ global
-                                        companies
+                                    <div className="badge-text logo-addendum-title shrink-0">
+                                        Certified E-Waste <br/> Recycler
                                     </div>
 
                                     <div className="marquee">
